@@ -117,7 +117,7 @@ The following table summarizes all operators in order of precedence from highest
 | __Section__                                                                                   | __Category__                | __Operators__ | 
 |-----------------------------------------------------------------------------------------------|-----------------------------|---------------|
 | [Primary expressions](expressions.md#primary-expressions)                                     | Primary                     | `x.y`  `f(x)`  `a[x]`  `x++`  `x--`  `new`  `typeof`  `default`  `checked`  `unchecked`  `delegate` | 
-| [Unary operators](expressions.md#unary-operators)                                             | Unary                       | `+`  `*`  `!`  `~`  `++x`  `--x`  `(T)x` | 
+| [Unary operators](expressions.md#unary-operators)                                             | Unary                       | `+`  `-`  `!`  `~`  `++x`  `--x`  `(T)x` | 
 | [Arithmetic operators](expressions.md#arithmetic-operators)                                   | Multiplicative              | `*`  `/`  `%` | 
 | [Arithmetic operators](expressions.md#arithmetic-operators)                                   | Additive                    | `+`  `-`      | 
 | [Shift operators](expressions.md#shift-operators)                                             | Shift                       | `<<`  `>>`    | 
@@ -971,7 +971,7 @@ primary_expression
 
 primary_no_array_creation_expression
     : literal
-    | interpolated_string
+    | interpolated_string_expression
     | simple_name
     | parenthesized_expression
     | member_access
